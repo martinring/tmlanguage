@@ -6,10 +6,10 @@
     "grammar": {
       "type": "object",
         "properties": {
-          "name": { type: "string" },
-          "scopeName": { type: "string" },
-          "fileTypes": { type: "array", items: { type: "string" } },
-          "uuid": { type: "string" },
+          "name": { "type": "string" },
+          "scopeName": { "type": "string" },
+          "fileTypes": { "type": "array", "items": { "type": "string" } },
+          "uuid": { "type": "string" },
           "patterns": {
             "type": "array",
             "items": { "$ref": "#/definitions/pattern" },
