@@ -23,7 +23,7 @@
           }
         },
         "required": [
-          "patterns", "name", "uuid", "scopeName", "fileTypes"
+          "patterns"
         ]
     },
     "captures": {
