@@ -119,6 +119,14 @@
           "type": "array",
           "items": { "$ref": "#/definitions/pattern" },
           "default": [ ]
+        },
+        "applyEndPatternLast": {
+          "type": "integer", 
+          "minimum": 0, 
+          "maximum": 1
+        },
+        "while": {
+          "type": "string"
         }
       },
       "dependencies": {
@@ -127,7 +135,8 @@
         "contentName": ["begin","end"],
         "beginCaptures": ["begin","end"],
         "endCaptures": ["begin","end"],
-        "patterns": ["begin","end"]
+        "patterns": ["begin","end"],
+        "applyEndPatternLast": ["end"]
       }
     },
     "name": {
