@@ -1,4 +1,5 @@
-# tmlanguage
+# `tmLanguage` Schema
 
-This is a json schema for textmate grammar definitions. Can be used to get intellisense working when etiting grammar definitions within visual studio code.
+This is a JSON schema for TextMate grammar definitions.
 
+Can be used to get intellisense working when editing grammar definitions within **Visual&nbsp;Studio&nbsp;Code**.
