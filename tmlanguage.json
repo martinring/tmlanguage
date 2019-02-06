@@ -31,7 +31,7 @@
             "uuid": { "type": "string" },
             "firstLineMatch": { "type": "string" }
           },
-          "required": ["scopeName"]
+          "required": [ "scopeName" ]
         }
       ]
     },
@@ -47,7 +47,7 @@
             "description": "a dictionary (i.e. key/value pairs) of rules which can be included from other places in the grammar. The key is the name of the rule and the value is the actual rule. Further explanation (and example) follow with the description of the include rule key.",
             "type": "object",
             "additionalProperties": {
-              "$ref": "#/definitions/grammar"
+              "$ref": "#/definitions/pattern"
             }
           }
         },
@@ -121,8 +121,8 @@
           "default": [ ]
         },
         "applyEndPatternLast": {
-          "type": "integer", 
-          "minimum": 0, 
+          "type": "integer",
+          "minimum": 0,
           "maximum": 1
         },
         "while": {
@@ -130,13 +130,13 @@
         }
       },
       "dependencies": {
-        "begin": ["end"],
-        "end": ["begin"],
-        "contentName": ["begin","end"],
-        "beginCaptures": ["begin","end"],
-        "endCaptures": ["begin","end"],
-        "patterns": ["begin","end"],
-        "applyEndPatternLast": ["end"]
+        "begin": [ "end" ],
+        "end": [ "begin" ],
+        "contentName": [ "begin", "end" ],
+        "beginCaptures": [ "begin", "end" ],
+        "endCaptures": [ "begin", "end" ],
+        "patterns": [ "begin", "end" ],
+        "applyEndPatternLast": [ "end" ]
       }
     },
     "name": {
