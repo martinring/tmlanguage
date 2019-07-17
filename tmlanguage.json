@@ -135,7 +135,6 @@
         "contentName": [ "begin", "end" ],
         "beginCaptures": [ "begin", "end" ],
         "endCaptures": [ "begin", "end" ],
-        "patterns": [ "begin", "end" ],
         "applyEndPatternLast": [ "end" ]
       }
     },
