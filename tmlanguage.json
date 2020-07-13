@@ -130,11 +130,13 @@
         }
       },
       "dependencies": {
-        "begin": [ "end" ],
+        "begin": { "anyOf": [ "end", "while" ] },
         "end": [ "begin" ],
+        "while": [ "begin" ],
         "contentName": [ "begin", "end" ],
         "beginCaptures": [ "begin", "end" ],
         "endCaptures": [ "begin", "end" ],
+        "whileCaptures": [ "begin", "while" ],
         "applyEndPatternLast": [ "end" ]
       }
     },
