@@ -142,7 +142,7 @@
         "end": [ "begin" ],
         "while": [ "begin" ],
         "contentName": [ "begin", "end" ],
-        "beginCaptures": [ "begin", "end" ],
+        "beginCaptures": { "anyOf": [[ "begin", "end" ], [ "begin", "while" ]] },
         "whileCaptures": [ "begin", "while" ],
         "endCaptures": [ "begin", "end" ],
         "applyEndPatternLast": [ "end" ]
