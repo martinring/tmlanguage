@@ -132,9 +132,6 @@
           "type": "integer",
           "minimum": 0,
           "maximum": 1
-        },
-        "while": {
-          "type": "string"
         }
       },
       "dependencies": {
