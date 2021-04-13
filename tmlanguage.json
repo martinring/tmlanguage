@@ -138,7 +138,7 @@
         "begin": { "anyOf": [ "end", "while" ] },
         "end": [ "begin" ],
         "while": [ "begin" ],
-        "contentName": [ "begin", "end" ],
+        "contentName": { "anyOf": [[ "begin", "end" ], [ "begin", "while" ]] },
         "beginCaptures": { "anyOf": [[ "begin", "end" ], [ "begin", "while" ]] },
         "whileCaptures": [ "begin", "while" ],
         "endCaptures": [ "begin", "end" ],
