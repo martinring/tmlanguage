@@ -148,8 +148,7 @@
     "name": {
       "anyOf": [
         {
-          "type": "string",
-          "pattern": "^([\\w0-9]|\\$\\d+)+(\\.([\\w0-9-]|\\$\\d+)+)*$"
+          "type": "string"
         },
         {
           "type": "string",
