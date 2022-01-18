@@ -77,7 +77,7 @@
       "type": "object",
       "properties": {
         "comment": { "type": "string" },
-        "disabled": { "type": "integer", "minimum": 0, "maximum": 1 },
+        "disabled": { "type": "integer", "minimum": 0, "maximum": 1, "description": "set this property to 1 to disable the current pattern" },
         "include": {
           "description": "this allows you to reference a different language, recursively reference the grammar itself or a rule declared in this file’s repository.",
           "type": "string"
