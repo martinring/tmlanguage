@@ -37,23 +37,23 @@
     },
     "grammar": {
       "type": "object",
-      "properties": {
-        "patterns": {
-          "type": "array",
-          "items": { "$ref": "#/definitions/pattern" },
-          "default": [ ]
-        },
-        "repository": {
-          "description": "a dictionary (i.e. key/value pairs) of rules which can be included from other places in the grammar. The key is the name of the rule and the value is the actual rule. Further explanation (and example) follow with the description of the include rule key.",
-          "type": "object",
-          "additionalProperties": {
-            "$ref": "#/definitions/pattern"
+        "properties": {
+          "patterns": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/pattern" },
+            "default": [ ]
+          },
+          "repository": {
+            "description": "a dictionary (i.e. key/value pairs) of rules which can be included from other places in the grammar. The key is the name of the rule and the value is the actual rule. Further explanation (and example) follow with the description of the include rule key.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/definitions/pattern"
+            }
           }
-        }
-      },
-      "required": [
-        "patterns"
-      ]
+        },
+        "required": [
+          "patterns"
+        ]
     },
     "captures": {
       "type": "object",
