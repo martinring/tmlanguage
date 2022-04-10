@@ -135,11 +135,23 @@
         }
       },
       "dependencies": {
-        "begin": { "anyOf": [ "end", "while" ] },
+        "begin": {
+          "anyOf": [{ "required": [ "end" ] }, { "required": [ "while" ] }]
+        },
         "end": [ "begin" ],
         "while": [ "begin" ],
-        "contentName": { "anyOf": [[ "begin", "end" ], [ "begin", "while" ]] },
-        "beginCaptures": { "anyOf": [[ "begin", "end" ], [ "begin", "while" ]] },
+        "contentName": {
+          "anyOf": [
+            { "required": [ "begin", "end" ] },
+            { "required": [ "begin", "while" ] }
+          ]
+        },
+        "beginCaptures": {
+          "anyOf": [
+            { "required": [ "begin", "end" ] },
+            { "required": [ "begin", "while" ] }
+          ]
+        },
         "whileCaptures": [ "begin", "while" ],
         "endCaptures": [ "begin", "end" ],
         "applyEndPatternLast": [ "end" ]
